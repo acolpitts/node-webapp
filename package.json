@@ -1,0 +1,20 @@
+{
+  "name": "building-containerized-apps",
+  "version": "1.0.0",
+  "description": "Simple node web app to learn about containerizating apps with docker",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./server.js",
+    "ui": "browser-sync start --proxy=localhost:8080 --files='**/*.css, **/*.pug, **/*.js' --ignore=node_modules --reload-delay 10 --no-ui --no-notify"
+  },
+  "author": "Adam Colpitts",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
